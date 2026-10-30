@@ -19,6 +19,9 @@ Body typeface: Inter, sans-serif
     --gold: #C58B45;
     --charcoal: #252D2A;
 
+    --font-heading: "Lora", serif;
+    --font-body: "Inter", sans-serif;
+
     --muted: #68716B;
     --white: #FFFFFF;
     --line: #E6E1D6;
@@ -39,7 +42,7 @@ body {
     margin: 0;
     background: var(--ivory);
     color: var(--charcoal);
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-body);
     line-height: 1.65;
 }
 
@@ -53,10 +56,8 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
-    font-family: "Lora", serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-heading);
     line-height: 1.18;
 }
 
@@ -135,7 +136,7 @@ main {
     border: 1px solid var(--gold);
     border-radius: 50%;
 
-    font-family: "Lora", serif;
+    font-family: var(--font-heading);
     font-size: 24px;
 }
 
